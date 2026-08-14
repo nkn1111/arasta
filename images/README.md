@@ -1,6 +1,8 @@
 # Swapping in your own photos
 
-The live site currently hotlinks free stock photos directly from Unsplash so the
+`storefront.jpg` is a real photo of Arasta's actual entrance/signage, pulled
+from the cafe's Google Maps listing — it's used as the Story section image.
+Everything else still hotlinks free stock photos directly from Unsplash so the
 repo stays small and there was nothing to approve/download up front. Every
 `<img>` (and the hero's CSS background) in `index.html` has a comment right
 above/below it naming the local file it expects, e.g.:

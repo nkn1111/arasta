@@ -213,6 +213,17 @@ a {
 .hero-tagline {
   font-size: 1.1rem;
   color: var(--color-ink);
+  margin: 0 0 20px;
+}
+
+.hero-rating {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  background: rgba(1, 153, 146, 0.15);
+  padding: 6px 16px;
+  border-radius: 999px;
   margin: 0 0 28px;
 }
 
@@ -282,6 +293,14 @@ a {
 
 .story-copy p {
   margin-bottom: 18px;
+}
+
+.story-quote {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-teal);
+  border-left: 3px solid var(--color-gold);
+  padding-left: 16px;
 }
 
 /* ---------- Cards / Menu ---------- */
