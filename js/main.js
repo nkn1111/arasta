@@ -73,6 +73,13 @@ tabs.forEach((tab, i) => {
   });
 });
 
+// Phrase cards flip on click or Enter/Space (they are buttons)
+document.querySelectorAll(".phrase").forEach((card) => {
+  card.addEventListener("click", () => {
+    card.setAttribute("aria-pressed", String(card.getAttribute("aria-pressed") !== "true"));
+  });
+});
+
 // Mobile nav toggle
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.getElementById("nav-links");
@@ -91,46 +98,3 @@ if (navToggle && navLinks) {
 // Footer year
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-// Signup form submit via fetch (Formspree) so the page never reloads
-const signupForm = document.getElementById("signup-form");
-const formStatus = document.getElementById("form-status");
-
-if (signupForm && formStatus) {
-  signupForm.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
-    if (signupForm.action.includes("YOUR_FORMSPREE_ID")) {
-      formStatus.textContent = "Signup isn't connected yet. Email hello@arasta.coffee to join the list.";
-      formStatus.className = "form-status error";
-      return;
-    }
-
-    const submitButton = signupForm.querySelector("button[type=submit]");
-    submitButton.disabled = true;
-    formStatus.textContent = "";
-    formStatus.className = "form-status";
-
-    try {
-      const response = await fetch(signupForm.action, {
-        method: "POST",
-        body: new FormData(signupForm),
-        headers: { Accept: "application/json" },
-      });
-
-      if (response.ok) {
-        formStatus.textContent = "You're on the list. See you at the bar.";
-        formStatus.className = "form-status success";
-        signupForm.reset();
-      } else {
-        formStatus.textContent = "Signup didn't go through. Check your email address and try again.";
-        formStatus.className = "form-status error";
-      }
-    } catch (error) {
-      formStatus.textContent = "No connection. Check your internet and try again.";
-      formStatus.className = "form-status error";
-    } finally {
-      submitButton.disabled = false;
-    }
-  });
-}

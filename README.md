@@ -1,15 +1,15 @@
 # Arasta Fortkochi
 
-Brand & lead-capture website for **Arasta Fortkochi**, a specialty coffee house
+Brand and showcase website for **Arasta Fortkochi**, a specialty coffee house
 in Fort Kochi, Kerala. Plain HTML/CSS/JS — no build step — deployed free on
 GitHub Pages at [arasta.coffee](https://arasta.coffee).
 
 ## Structure
 
 ```
-index.html          Single-page site (hero, languages marquee, experience grid, menu, numbers, story, gallery, visit, signup, footer)
+index.html          Single-page site (hero, languages marquee, experience grid, menu, Malayalam phrases, numbers, story, gallery, walking route, visit, footer)
 css/style.css        All styling, theme colours as CSS custom properties in :root
-js/main.js           Scroll progress, word reveal, count-up numbers, menu tabs, mobile nav, signup form (Formspree)
+js/main.js           Scroll progress, word reveal, count-up numbers, menu tabs, phrase cards, mobile nav
 images/             Local photos (CC0 / Unsplash licence); credits in images/README.md
 CNAME                Custom domain config for GitHub Pages (arasta.coffee)
 ```
@@ -27,12 +27,9 @@ Then visit `http://localhost:8000`.
 
 ## Before going live
 
-1. **Lead capture**: sign up free at [formspree.io](https://formspree.io),
-   create a form, and replace `YOUR_FORMSPREE_ID` in the signup form's
-   `action` attribute in `index.html` with your real form ID.
-2. **Photos**: most photos are free stock (CC0 / Unsplash). Swap in real
+1. **Photos**: most photos are free stock (CC0 / Unsplash). Swap in real
    Arasta photography when you have it; see `images/README.md`.
-3. **Menu**: confirm the items in the menu section match what Arasta serves.
+2. **Menu**: confirm the items in the menu section match what Arasta serves.
 
 ## Deploy (GitHub Pages)
 

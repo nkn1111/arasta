@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arasta Fortkochi | Slow coffee for a fast world</title>
   <meta name="description" content="Arasta is a coffee house and brew bar on Quiros Street, Fort Kochi. Hand-brewed coffee, 18-hour cold brew, small-batch beans and brew sessions where you pour your own." />
-  <meta name="theme-color" content="#021c1c" />
+  <meta name="theme-color" content="#160d08" />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://arasta.coffee/" />
@@ -13,7 +13,7 @@
   <meta property="og:description" content="A coffee house and brew bar on Quiros Street, Fort Kochi. Come for a cup, stay to learn the pour." />
   <meta property="og:image" content="https://arasta.coffee/images/storefront.jpg" />
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23021c1c'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='800' fill='%23ff7f59' text-anchor='middle'%3Ea%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23160d08'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='800' fill='%23d98c4f' text-anchor='middle'%3Ea%3C/text%3E%3C/svg%3E" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -58,8 +58,8 @@
       <nav class="nav-links" id="nav-links">
         <a href="#experience">Experience</a>
         <a href="#menu">Menu</a>
-        <a href="#story">Story</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#local">Phrases</a>
+        <a href="#around">Around</a>
         <a href="#visit">Visit</a>
         <a href="mailto:hello@arasta.coffee?subject=Brew%20session%20booking" class="btn btn-primary">Book a session</a>
       </nav>
@@ -118,10 +118,20 @@
             <path d="M222 140 h10 a27 27 0 0 1 0 54 h-16" fill="none" stroke="#e2b88c" stroke-width="14" stroke-linecap="round" />
             <path d="M74 118 H226 V168 Q226 234 162 234 H138 Q74 234 74 168 Z" fill="url(#cup-shade)" />
             <path d="M92 132 V170 Q92 198 108 212" fill="none" stroke="#fffaf3" stroke-width="5" stroke-linecap="round" opacity="0.7" />
-            <ellipse cx="150" cy="118" rx="76" ry="14" fill="#fff4e6" />
-            <ellipse cx="150" cy="119" rx="67" ry="10.5" fill="url(#coffee-shade)" />
-            <!-- latte-art heart -->
-            <path class="heart" d="M150 126 C 136 120 132 113 138 110 C 143 108 147 110 150 113 C 153 110 157 108 162 110 C 168 113 164 120 150 126 Z" />
+            <ellipse cx="150" cy="118" rx="76" ry="26" fill="#fff4e6" />
+            <ellipse cx="150" cy="119" rx="67" ry="22" fill="url(#coffee-shade)" />
+            <!-- latte art: a Chinese fishing net, Fort Kochi's landmark -->
+            <clipPath id="coffee-clip"><ellipse cx="150" cy="119" rx="65" ry="21" /></clipPath>
+            <g class="latte" clip-path="url(#coffee-clip)">
+              <path class="foam-line" d="M118 134 L164 100 M128 134 L170 103" />
+              <path class="foam-line" d="M112 134 H138" />
+              <path class="foam-line thin" d="M167 101 L151 122 M167 101 L187 120 M167 101 L106 118" />
+              <path class="foam" d="M149 122 L189 120 L184 130 L154 131 Z" />
+              <path class="mesh" d="M156 122 L159 131 M164 121.5 L167 131 M172 121 L174 130.5 M180 120.5 L181 130 M151 126 L187 125" />
+              <circle class="foam" cx="106" cy="121" r="2.8" />
+              <circle class="foam" cx="110" cy="126" r="2.3" />
+              <path class="foam-line thin" d="M96 138 q6 -2.5 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0 t12 0" />
+            </g>
           </svg>
 
         </div>
@@ -202,8 +212,8 @@
 
           <article class="tile rise">
             <svg class="ico ico-beans" viewBox="0 0 64 64" aria-hidden="true">
-              <g class="b1"><path d="M22 10 c10 0 14 8 14 14 c0 9 -7 14 -14 14 c-9 0 -14 -7 -14 -14 c0 -7 5 -14 14 -14 Z" /><path d="M20 12 c7 7 -6 16 2 24" /></g>
-              <g class="b2"><path d="M44 28 c9 0 12 7 12 12 c0 8 -6 12 -12 12 c-8 0 -12 -6 -12 -12 c0 -6 4 -12 12 -12 Z" /><path d="M42 30 c6 6 -5 14 2 20" /></g>
+              <g class="b1"><g transform="translate(22 24) rotate(-28)"><ellipse rx="9.5" ry="14" /><path d="M0 -13 C 6 -6 -6 6 0 13" /></g></g>
+              <g class="b2"><g transform="translate(44 40) rotate(32)"><ellipse rx="8.5" ry="12.5" /><path d="M0 -11.5 C 5 -5 -5 5 0 11.5" /></g></g>
             </svg>
             <h3>Beans to take home</h3>
             <p>Small-batch roasts, ground for your brewer.</p>
@@ -253,6 +263,43 @@
       </div>
     </section>
 
+    <!-- ORDER LIKE A LOCAL: tap a card to flip it -->
+    <section class="local" id="local">
+      <div class="wrap">
+        <div class="section-head rise">
+          <h2>Order like a local.</h2>
+          <p>Kochi speaks Malayalam. Try a few words at the counter. Tap a card to see what it means.</p>
+        </div>
+
+        <ul class="phrases">
+          <li><button class="phrase rise" type="button" aria-pressed="false">
+            <span class="face front"><span class="ml" lang="ml">ഒരു കാപ്പി</span><span class="say">oru kaapi</span></span>
+            <span class="face back"><strong>One coffee</strong><span>Add a smile and that's a full order.</span></span>
+          </button></li>
+          <li><button class="phrase rise" type="button" aria-pressed="false">
+            <span class="face front"><span class="ml" lang="ml">മധുരം കുറച്ച്</span><span class="say">madhuram kurachu</span></span>
+            <span class="face back"><strong>Less sugar</strong><span>Kerala coffee runs sweet. Say this to keep it light.</span></span>
+          </button></li>
+          <li><button class="phrase rise" type="button" aria-pressed="false">
+            <span class="face front"><span class="ml" lang="ml">ചായ</span><span class="say">chaaya</span></span>
+            <span class="face back"><strong>Tea</strong><span>For the friend who came along but doesn't drink coffee.</span></span>
+          </button></li>
+          <li><button class="phrase rise" type="button" aria-pressed="false">
+            <span class="face front"><span class="ml" lang="ml">കൊള്ളാം!</span><span class="say">kollaam!</span></span>
+            <span class="face back"><strong>That's good!</strong><span>Our favourite thing to hear after the first sip.</span></span>
+          </button></li>
+          <li><button class="phrase rise" type="button" aria-pressed="false">
+            <span class="face front"><span class="ml" lang="ml">നന്ദി</span><span class="say">nanni</span></span>
+            <span class="face back"><strong>Thank you</strong><span>Works everywhere in Kerala, from the bar to the ferry.</span></span>
+          </button></li>
+          <li><button class="phrase rise" type="button" aria-pressed="false">
+            <span class="face front"><span class="ml" lang="ml">പിന്നെ കാണാം</span><span class="say">pinne kaanaam</span></span>
+            <span class="face back"><strong>See you later</strong><span>Because one visit is never enough.</span></span>
+          </button></li>
+        </ul>
+      </div>
+    </section>
+
     <!-- NUMBERS: only real ones -->
     <section class="numbers">
       <div class="wrap numbers-row">
@@ -273,6 +320,13 @@
             <g class="crank"><path d="M32 12 V6 H48" /><circle cx="48" cy="6" r="3" /></g>
             <path d="M18 12 h28 v6 h-28 Z" />
             <path d="M20 18 h24 v26 q0 6 -6 6 h-12 q-6 0 -6 -6 Z" />
+            <g class="hopper-beans">
+              <g transform="translate(27 41) rotate(-20)"><ellipse rx="4" ry="2.8" /><path d="M-3 0.4 q3 -1.6 6 0" /></g>
+              <g transform="translate(36 42) rotate(25)"><ellipse rx="4" ry="2.8" /><path d="M-3 0.4 q3 -1.6 6 0" /></g>
+              <g transform="translate(31 34) rotate(10)"><ellipse rx="4" ry="2.8" /><path d="M-3 0.4 q3 -1.6 6 0" /></g>
+              <g transform="translate(25 32) rotate(-35)"><ellipse rx="3.6" ry="2.5" /><path d="M-2.7 0.4 q2.7 -1.4 5.4 0" /></g>
+              <g transform="translate(38 32) rotate(40)"><ellipse rx="3.6" ry="2.5" /><path d="M-2.7 0.4 q2.7 -1.4 5.4 0" /></g>
+            </g>
             <path d="M26 50 l2 8 h8 l2 -8" />
             <circle class="ground g1" cx="30" cy="60" r="1.5" />
             <circle class="ground g2" cx="34" cy="60" r="1.5" />
@@ -286,8 +340,11 @@
     <section class="statement" id="story" data-scroll>
       <div class="statement-pin">
         <div class="wrap">
-          <p class="statement-text" data-words>Fort Kochi deserves a place where good coffee, good light and good company slow the day down. So every cup here is brewed by hand, and anyone who asks can learn how.</p>
-          <p class="statement-sign">Brewing bold stories in the heart of Fort Kochi.</p>
+          <p class="statement-text" data-words>Arasta was born from a simple idea: Fort Kochi deserves a place where good coffee, good light and good company slow the day down. Every cup is brewed with care, every corner is built for lingering.</p>
+          <div class="statement-foot">
+            <p class="statement-more">From sunrise filter coffee to unhurried evening conversations, Arasta is a small, honest space shaped by this city's old streets, sea breeze and stories.</p>
+            <p class="statement-sign">&ldquo;Brewing bold stories in the heart of Fort Kochi.&rdquo;</p>
+          </div>
         </div>
       </div>
     </section>
@@ -304,6 +361,60 @@
           <img src="images/menu-coffee.webp" alt="A cup of coffee with latte art" loading="lazy" width="900" height="1350" />
           <img src="images/gallery-4.webp" alt="A coffee counter" loading="lazy" width="800" height="533" />
         </div>
+      </div>
+    </section>
+
+    <!-- AROUND THE CORNER: a coffee walk through old Fort Kochi -->
+    <section class="around" id="around">
+      <div class="wrap">
+        <div class="section-head rise">
+          <h2>Around the corner.</h2>
+          <p>Arasta sits in the middle of old Fort Kochi. Take your cup to go and walk to these. Times are approximate, on foot from our door.</p>
+        </div>
+
+        <ol class="walk">
+          <li class="stop stop-home rise">
+            <span class="node"></span>
+            <h3>Arasta</h3>
+            <p>Start here. Coffee first, then the town.</p>
+            <span class="time">Quiros Street</span>
+          </li>
+          <li class="stop rise">
+            <span class="node"></span>
+            <h3>St. Francis Church</h3>
+            <p>One of the oldest European-built churches in India.</p>
+            <span class="time">2 min walk</span>
+            <a href="https://www.google.com/maps/dir/?api=1&origin=9.9655798,76.2417349&destination=St.+Francis+Church+Fort+Kochi&travelmode=walking" target="_blank" rel="noopener">Directions</a>
+          </li>
+          <li class="stop rise">
+            <span class="node"></span>
+            <h3>Santa Cruz Basilica</h3>
+            <p>Painted ceilings and stained glass, a few streets away.</p>
+            <span class="time">3 min walk</span>
+            <a href="https://www.google.com/maps/dir/?api=1&origin=9.9655798,76.2417349&destination=Santa+Cruz+Cathedral+Basilica+Fort+Kochi&travelmode=walking" target="_blank" rel="noopener">Directions</a>
+          </li>
+          <li class="stop rise">
+            <span class="node"></span>
+            <h3>Chinese fishing nets</h3>
+            <p>Best at sunrise and sunset, when the nets lift out of the water.</p>
+            <span class="time">5 min walk</span>
+            <a href="https://www.google.com/maps/dir/?api=1&origin=9.9655798,76.2417349&destination=Chinese+Fishing+Nets+Fort+Kochi&travelmode=walking" target="_blank" rel="noopener">Directions</a>
+          </li>
+          <li class="stop rise">
+            <span class="node"></span>
+            <h3>Fort Kochi Beach</h3>
+            <p>Sea breeze and passing ships. Perfect with a cold brew.</p>
+            <span class="time">5 min walk</span>
+            <a href="https://www.google.com/maps/dir/?api=1&origin=9.9655798,76.2417349&destination=Fort+Kochi+Beach&travelmode=walking" target="_blank" rel="noopener">Directions</a>
+          </li>
+          <li class="stop rise">
+            <span class="node"></span>
+            <h3>Mattancherry and Jew Town</h3>
+            <p>Spice shops, antiques and the Paradesi Synagogue.</p>
+            <span class="time">10 min by auto</span>
+            <a href="https://www.google.com/maps/dir/?api=1&origin=9.9655798,76.2417349&destination=Jew+Town+Mattancherry&travelmode=driving" target="_blank" rel="noopener">Directions</a>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -335,32 +446,11 @@
         </div>
       </div>
     </section>
-
-    <!-- JOIN -->
-    <section class="join" id="join">
-      <div class="wrap join-inner rise">
-        <h2>Get on the list.</h2>
-        <p>New brew sessions, events and seasonal menus. One email when there's something worth telling you.</p>
-
-        <form class="signup-form" id="signup-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-          <!-- Replace YOUR_FORMSPREE_ID with your real Formspree form ID (formspree.io) -->
-          <label class="visually-hidden" for="name">Name</label>
-          <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name" />
-          <label class="visually-hidden" for="email">Email</label>
-          <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" />
-          <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
-          <button type="submit" class="btn btn-primary">Join the list</button>
-        </form>
-        <p class="form-note">We only use your details to send Arasta news. Unsubscribe any time.</p>
-        <p class="form-status" id="form-status" role="status"></p>
-      </div>
-    </section>
-
   </main>
 
   <footer class="footer">
     <div class="wrap">
-      <p class="footer-mark" aria-hidden="true">arasta<span>.</span></p>
+      <p class="footer-mark" aria-hidden="true"><span>a</span><span>r</span><span>a</span><span>s</span><span>t</span><span>a</span><span class="dot">.</span></p>
       <div class="footer-row">
         <ul class="footer-links">
           <li><a href="https://www.instagram.com/arasta.fortkochi" target="_blank" rel="noopener">Instagram</a></li>
