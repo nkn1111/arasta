@@ -3,228 +3,372 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arasta Fortkochi — Specialty Coffee &amp; Community Cafe in Fort Kochi</title>
-  <meta name="description" content="Arasta Fortkochi is a specialty coffee house in the heart of Fort Kochi, Kerala — join our list for launch offers, events and new menu drops." />
+  <title>Arasta Fortkochi | Slow coffee for a fast world</title>
+  <meta name="description" content="Arasta is a coffee house and brew bar on Quiros Street, Fort Kochi. Hand-brewed coffee, 18-hour cold brew, small-batch beans and brew sessions where you pour your own." />
+  <meta name="theme-color" content="#021c1c" />
 
-  <link rel="preconnect" href="https://images.unsplash.com" />
-  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1800&q=70" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://arasta.coffee/" />
+  <meta property="og:title" content="Arasta Fortkochi: slow coffee for a fast world" />
+  <meta property="og:description" content="A coffee house and brew bar on Quiros Street, Fort Kochi. Come for a cup, stay to learn the pour." />
+  <meta property="og:image" content="https://arasta.coffee/images/storefront.jpg" />
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23ffdcb4'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='bold' fill='%23003030' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23021c1c'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='800' fill='%23ff7f59' text-anchor='middle'%3Ea%3C/text%3E%3C/svg%3E" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@400;600;800&display=swap" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Arasta Fortkochi",
+    "url": "https://arasta.coffee",
+    "image": "https://arasta.coffee/images/storefront.jpg",
+    "email": "hello@arasta.coffee",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Quiros St, Fort Nagar",
+      "addressLocality": "Fort Kochi, Kochi",
+      "addressRegion": "Kerala",
+      "postalCode": "682001",
+      "addressCountry": "IN"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 9.9655798, "longitude": 76.2417349 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "08:30", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday", "Sunday"], "opens": "08:30", "closes": "23:00" }
+    ],
+    "sameAs": ["https://www.instagram.com/arasta.fortkochi"]
+  }
+  </script>
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="#top" class="brand">arasta<span>.</span>fortkochi</a>
+  <header class="nav">
+    <div class="wrap nav-row">
+      <a href="#top" class="brand">arasta<span>.</span></a>
 
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
-        <span class="nav-toggle-bar"></span>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
       </button>
 
-      <nav class="main-nav" id="main-nav">
-        <ul>
-          <li><a href="#story">Story</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#visit">Visit</a></li>
-          <li><a href="#join" class="btn btn-primary">Join the List</a></li>
-        </ul>
+      <nav class="nav-links" id="nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#menu">Menu</a>
+        <a href="#story">Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+        <a href="mailto:hello@arasta.coffee?subject=Brew%20session%20booking" class="btn btn-primary">Book a session</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
 
-    <!-- HERO: the first-screen moment meant to hook visitors on the brand -->
+    <!-- HERO: a cup at the centre of an orbit of beans -->
     <section class="hero">
-      <div class="hero-card">
-        <p class="hero-eyebrow">Fort Kochi, Kerala</p>
-        <h1 class="hero-title">Arasta Fortkochi</h1>
-        <p class="hero-tagline">Slow coffee, warm light, and a table always open in the heart of Fort Kochi.</p>
-        <p class="hero-rating">★ 4.6 on Google</p>
-        <div class="hero-actions">
-          <a href="#join" class="btn btn-primary">Join the List</a>
-          <a href="#story" class="btn btn-outline">Our Story</a>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hero-place">Arasta, Quiros Street, Fort Kochi</p>
+          <h1>Slow coffee for a fast world.</h1>
+          <p class="hero-lead">A coffee house and brew bar in old Fort Kochi. Hand-brewed cups, small-batch beans, and a bar where you can learn to pour your own.</p>
+          <div class="hero-actions">
+            <a href="mailto:hello@arasta.coffee?subject=Brew%20session%20booking" class="btn btn-primary">Book a brew session</a>
+            <a href="#visit" class="btn btn-ghost">Plan your visit</a>
+          </div>
+          <p class="hero-meta"><span class="star">★</span> 4.6 on Google <span class="sep"></span> Open daily from 8:30 am</p>
+        </div>
+
+        <div class="orbit" aria-hidden="true">
+          <svg class="hero-cup" viewBox="0 0 300 300">
+            <defs>
+              <linearGradient id="cup-shade" x1="0" x2="1">
+                <stop offset="0" stop-color="#e2b88c" />
+                <stop offset="0.28" stop-color="#fff1df" />
+                <stop offset="0.62" stop-color="#ffdcb4" />
+                <stop offset="1" stop-color="#d9a877" />
+              </linearGradient>
+              <linearGradient id="saucer-shade" x1="0" x2="1">
+                <stop offset="0" stop-color="#d9a877" />
+                <stop offset="0.35" stop-color="#ffe9cf" />
+                <stop offset="1" stop-color="#cf9c6c" />
+              </linearGradient>
+              <radialGradient id="coffee-shade" cx="0.45" cy="0.4" r="0.7">
+                <stop offset="0" stop-color="#9a6238" />
+                <stop offset="0.7" stop-color="#5e3620" />
+                <stop offset="1" stop-color="#3b2013" />
+              </radialGradient>
+            </defs>
+
+            <g class="steam">
+              <path d="M128 110 c-12 -16 12 -26 0 -42 c-12 -16 12 -26 0 -42" />
+              <path d="M152 106 c-12 -16 12 -26 0 -42 c-12 -16 12 -26 0 -42" />
+              <path d="M176 110 c-12 -16 12 -26 0 -42 c-12 -16 12 -26 0 -42" />
+            </g>
+
+            <!-- saucer with a soft contact shadow -->
+            <ellipse cx="150" cy="252" rx="118" ry="20" fill="rgba(0,0,0,0.35)" />
+            <ellipse cx="150" cy="240" rx="122" ry="24" fill="url(#saucer-shade)" />
+            <ellipse cx="150" cy="236" rx="84" ry="14" fill="#d6a676" />
+
+            <!-- handle, then body, then rim and coffee -->
+            <path d="M222 140 h10 a27 27 0 0 1 0 54 h-16" fill="none" stroke="#e2b88c" stroke-width="14" stroke-linecap="round" />
+            <path d="M74 118 H226 V168 Q226 234 162 234 H138 Q74 234 74 168 Z" fill="url(#cup-shade)" />
+            <path d="M92 132 V170 Q92 198 108 212" fill="none" stroke="#fffaf3" stroke-width="5" stroke-linecap="round" opacity="0.7" />
+            <ellipse cx="150" cy="118" rx="76" ry="14" fill="#fff4e6" />
+            <ellipse cx="150" cy="119" rx="67" ry="10.5" fill="url(#coffee-shade)" />
+            <!-- latte-art heart -->
+            <path class="heart" d="M150 126 C 136 120 132 113 138 110 C 143 108 147 110 150 113 C 153 110 157 108 162 110 C 168 113 164 120 150 126 Z" />
+          </svg>
+
         </div>
       </div>
     </section>
 
-    <!-- STORY -->
-    <section class="section" id="story">
-      <div class="container story">
-        <div class="story-image">
-          <img
-            src="images/storefront.jpg"
-            alt="Arasta Fortkochi's storefront and entrance sign"
-            loading="lazy"
-            width="960" height="1280" />
+    <!-- "coffee" around the world -->
+    <div class="ticker ticker-lang" aria-hidden="true">
+      <div class="ticker-track">
+        <span lang="ml">കാപ്പി</span><i></i><span lang="ta">காபி</span><i></i><span lang="hi">कॉफ़ी</span><i></i><span lang="te">కాఫీ</span><i></i><span lang="kn">ಕಾಫಿ</span><i></i><span lang="bn">কফি</span><i></i><span lang="en">coffee</span><i></i><span lang="ar" dir="rtl">قهوة</span><i></i><span lang="mr">कॉफी</span><i></i><span lang="gu">કૉફી</span><i></i><span lang="pa">ਕੌਫ਼ੀ</span><i></i><span lang="or">କଫି</span><i></i><span lang="ur" dir="rtl">کافی</span><i></i><span lang="ne">कफी</span><i></i><span lang="zh">咖啡</span><i></i><span lang="ja">コーヒー</span><i></i><span lang="ko">커피</span><i></i><span lang="fr">café</span><i></i><span lang="it">caffè</span><i></i><span lang="de">Kaffee</span><i></i><span lang="nl">koffie</span><i></i><span lang="ru">кофе</span><i></i><span lang="tr">kahve</span><i></i><span lang="el">καφές</span><i></i><span lang="th">กาแฟ</span><i></i><span lang="sw">kahawa</span><i></i><span lang="fa" dir="rtl">قهوه</span><i></i><span lang="he" dir="rtl">קפה</span><i></i>
+        <span lang="ml">കാപ്പി</span><i></i><span lang="ta">காபி</span><i></i><span lang="hi">कॉफ़ी</span><i></i><span lang="te">కాఫీ</span><i></i><span lang="kn">ಕಾಫಿ</span><i></i><span lang="bn">কফি</span><i></i><span lang="en">coffee</span><i></i><span lang="ar" dir="rtl">قهوة</span><i></i><span lang="mr">कॉफी</span><i></i><span lang="gu">કૉફી</span><i></i><span lang="pa">ਕੌਫ਼ੀ</span><i></i><span lang="or">କଫି</span><i></i><span lang="ur" dir="rtl">کافی</span><i></i><span lang="ne">कफी</span><i></i><span lang="zh">咖啡</span><i></i><span lang="ja">コーヒー</span><i></i><span lang="ko">커피</span><i></i><span lang="fr">café</span><i></i><span lang="it">caffè</span><i></i><span lang="de">Kaffee</span><i></i><span lang="nl">koffie</span><i></i><span lang="ru">кофе</span><i></i><span lang="tr">kahve</span><i></i><span lang="el">καφές</span><i></i><span lang="th">กาแฟ</span><i></i><span lang="sw">kahawa</span><i></i><span lang="fa" dir="rtl">قهوه</span><i></i><span lang="he" dir="rtl">קפה</span><i></i>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE: what Arasta offers, each with its own living icon -->
+    <section class="experience" id="experience">
+      <div class="wrap">
+        <div class="section-head rise">
+          <h2>Five reasons to slow down.</h2>
+          <p>Every cup at Arasta is made by someone standing right in front of you. Here's what's waiting on Quiros Street.</p>
         </div>
-        <div class="story-copy">
-          <p class="section-eyebrow">Our Story</p>
-          <h2>A slow-coffee corner of Fort Kochi</h2>
-          <p>Arasta was born from a simple idea: Fort Kochi deserves a place where good coffee, good light and good company slow the day down. Every cup is brewed with care, every corner is built for lingering.</p>
-          <p>From sunrise filter coffee to unhurried evening conversations, Arasta is a small, honest space shaped by this city's old streets, sea breeze and stories.</p>
-          <p class="story-quote">&ldquo;Brewing bold stories in the heart of Fort Kochi.&rdquo;</p>
-          <a href="#visit" class="btn btn-outline">Find Us</a>
+
+        <div class="bento">
+          <article class="tile tile-hero rise">
+            <img src="images/step-pour.webp" alt="A gooseneck kettle pouring water over a paper filter" width="960" height="720" loading="lazy" />
+            <div class="tile-body">
+              <svg class="ico ico-pour" viewBox="0 0 64 64" aria-hidden="true">
+                <path d="M6 18 h18 l3 20 q0 4 -4 4 h-14 q-4 0 -4 -4 Z" />
+                <path d="M10 18 q7 -6 14 0" />
+                <path d="M26 36 c8 0 7 -18 13 -17 c3 0 4 3 5 6" />
+                <path class="flow" d="M44 26 L48 40" />
+                <path d="M36 42 h24 l-8 12 h-8 Z" />
+                <path d="M38 58 h20" />
+              </svg>
+              <h3>Brew bar sessions</h3>
+              <p>Step behind the bar. Grind, bloom and pour your own cup with a barista beside you, then take the recipe home.</p>
+              <a class="btn btn-primary" href="mailto:hello@arasta.coffee?subject=Brew%20session%20booking">Book a session</a>
+            </div>
+          </article>
+
+          <article class="tile rise">
+            <svg class="ico ico-drip" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M12 8 h40 l-13 22 h-14 Z" />
+              <path d="M20 32 h24" />
+              <circle class="drop d1" cx="32" cy="36" r="2" />
+              <circle class="drop d2" cx="32" cy="36" r="2" />
+              <path d="M18 42 h28 v8 q0 8 -8 8 h-12 q-8 0 -8 -8 Z" />
+              <path d="M46 44 h3 a5 5 0 0 1 0 10 h-4" />
+            </svg>
+            <h3>Signature filter coffee</h3>
+            <p>Locally sourced beans, slow-brewed, smooth and rounded.</p>
+          </article>
+
+          <article class="tile rise">
+            <svg class="ico ico-cold" viewBox="0 0 64 64" aria-hidden="true">
+              <path d="M16 12 h32 l-4 46 h-24 Z" />
+              <path d="M18 26 h28" />
+              <rect class="ice i1" x="24" y="30" width="8" height="8" rx="2" />
+              <rect class="ice i2" x="34" y="36" width="7" height="7" rx="2" />
+              <path d="M38 4 l-4 30" />
+            </svg>
+            <h3>18-hour cold brew</h3>
+            <p>Steeped slow overnight. Crisp, bold, built for Kochi afternoons.</p>
+          </article>
+
+          <article class="tile rise">
+            <svg class="ico ico-cup" viewBox="0 0 64 64" aria-hidden="true">
+              <path class="wisp w1" d="M24 20 c-4 -5 4 -8 0 -13" />
+              <path class="wisp w2" d="M32 20 c-4 -5 4 -8 0 -13" />
+              <path class="wisp w3" d="M40 20 c-4 -5 4 -8 0 -13" />
+              <path d="M12 26 h36 v12 q0 14 -14 14 h-8 q-14 0 -14 -14 Z" />
+              <path d="M48 30 h4 a6 6 0 0 1 0 12 h-5" />
+              <path d="M8 58 h44" />
+            </svg>
+            <h3>All-day breakfast</h3>
+            <p>Fresh bakes and simple plates, from morning to night.</p>
+          </article>
+
+          <article class="tile rise">
+            <svg class="ico ico-beans" viewBox="0 0 64 64" aria-hidden="true">
+              <g class="b1"><path d="M22 10 c10 0 14 8 14 14 c0 9 -7 14 -14 14 c-9 0 -14 -7 -14 -14 c0 -7 5 -14 14 -14 Z" /><path d="M20 12 c7 7 -6 16 2 24" /></g>
+              <g class="b2"><path d="M44 28 c9 0 12 7 12 12 c0 8 -6 12 -12 12 c-8 0 -12 -6 -12 -12 c0 -6 4 -12 12 -12 Z" /><path d="M42 30 c6 6 -5 14 2 20" /></g>
+            </svg>
+            <h3>Beans to take home</h3>
+            <p>Small-batch roasts, ground for your brewer.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- MENU HIGHLIGHTS -->
-    <section class="section section-cream" id="menu">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">On the Menu</p>
-          <h2 class="section-title">A few Arasta favourites</h2>
-          <p class="section-lead">A short taste of what's brewing — the full menu grows as we do.</p>
+    <!-- MENU: tabs on wide screens, everything listed without JS -->
+    <section class="menu" id="menu">
+      <div class="wrap">
+        <div class="section-head rise">
+          <h2>On the menu.</h2>
+          <p>A short list, made well. Single origins change with the season, so ask at the bar what's brewing today.</p>
         </div>
 
-        <div class="cards">
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=500&q=70" alt="Signature filter coffee with latte art" loading="lazy" width="500" height="360" />
-            <!-- Replace with images/menu-coffee.jpg -->
-            <div class="card-body">
-              <h3>Signature Filter Coffee</h3>
-              <p>Slow-brewed, locally sourced beans with a smooth, rounded finish.</p>
-            </div>
-          </article>
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button role="tab" id="tab-hot" aria-controls="menu-hot" aria-selected="true">Hot coffee</button>
+          <button role="tab" id="tab-cold" aria-controls="menu-cold" aria-selected="false">Cold</button>
+          <button role="tab" id="tab-kitchen" aria-controls="menu-kitchen" aria-selected="false">Kitchen</button>
+          <button role="tab" id="tab-home" aria-controls="menu-home" aria-selected="false">Take home</button>
+        </div>
 
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1442550528053-c431ecb55509?auto=format&fit=crop&w=500&q=70" alt="Iced cold brew coffee" loading="lazy" width="500" height="360" />
-            <!-- Replace with images/menu-coldbrew.jpg -->
-            <div class="card-body">
-              <h3>Cold Brew &amp; Iced</h3>
-              <p>Steeped slow for 18 hours — crisp, bold, and built for Kochi afternoons.</p>
-            </div>
-          </article>
+        <div class="menu-panel" id="menu-hot" role="tabpanel" aria-labelledby="tab-hot">
+          <div class="menu-item"><h3>Signature filter coffee</h3><span class="tag">Signature</span><p>Locally sourced beans, slow-brewed, smooth and rounded.</p></div>
+          <div class="menu-item"><h3>Pour-over</h3><span class="tag">Brew bar</span><p>Single-origin beans brewed by hand while you watch.</p></div>
+          <div class="menu-item"><h3>Espresso</h3><p>A short, bold shot pulled to order.</p></div>
+          <div class="menu-item"><h3>Cappuccino</h3><p>Espresso, steamed milk and a soft cap of foam.</p></div>
+          <div class="menu-item"><h3>Latte</h3><p>Espresso with plenty of silky milk.</p></div>
+        </div>
 
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=500&q=70" alt="Fresh baked pastries" loading="lazy" width="500" height="360" />
-            <!-- Replace with images/menu-breakfast.jpg -->
-            <div class="card-body">
-              <h3>All-Day Breakfast</h3>
-              <p>Fresh bakes and simple plates, served from morning through evening.</p>
-            </div>
-          </article>
+        <div class="menu-panel" id="menu-cold" role="tabpanel" aria-labelledby="tab-cold">
+          <div class="menu-item"><h3>Cold brew</h3><span class="tag">18 hours</span><p>Steeped slow overnight. Crisp, bold, built for Kochi afternoons.</p></div>
+          <div class="menu-item"><h3>Iced latte</h3><p>Espresso over ice and cold milk.</p></div>
+          <div class="menu-item"><h3>Cold brew tonic</h3><p>Cold brew poured over tonic and ice. Bright and fizzy.</p></div>
+        </div>
 
-          <article class="card">
-            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=500&q=70" alt="Freshly roasted coffee beans" loading="lazy" width="500" height="360" />
-            <!-- Replace with images/menu-beans.jpg -->
-            <div class="card-body">
-              <h3>Fresh Roasted Beans</h3>
-              <p>Take Arasta home — beans roasted in small batches, bagged fresh.</p>
-            </div>
-          </article>
+        <div class="menu-panel" id="menu-kitchen" role="tabpanel" aria-labelledby="tab-kitchen">
+          <div class="menu-item"><h3>All-day breakfast</h3><span class="tag">Till close</span><p>Fresh bakes and simple plates, from morning to night.</p></div>
+          <div class="menu-item"><h3>Today's bakes</h3><p>Ask what came out of the oven this morning.</p></div>
+        </div>
+
+        <div class="menu-panel" id="menu-home" role="tabpanel" aria-labelledby="tab-home">
+          <div class="menu-item"><h3>Small-batch beans</h3><span class="tag">Fresh</span><p>Roasted in small batches and bagged fresh.</p></div>
+          <div class="menu-item"><h3>Ground to order</h3><p>Tell us your brewer and we grind to match.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- GALLERY -->
-    <section class="section" id="gallery">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Inside Arasta</p>
-          <h2 class="section-title">A feel for the space</h2>
-          <p class="section-lead">Swap these for your own photography any time — see images/README.md.</p>
+    <!-- NUMBERS: only real ones -->
+    <section class="numbers">
+      <div class="wrap numbers-row">
+        <div class="num rise">
+          <strong><span data-count="4.6" data-decimals="1">4.6</span><em>★</em></strong>
+          <p>Rating on Google</p>
         </div>
+        <div class="num rise">
+          <strong><span data-count="18">18</span><em>h</em></strong>
+          <p>Cold brew steep</p>
+        </div>
+        <div class="num rise">
+          <strong><span data-count="3">3</span><em>min</em></strong>
+          <p>Per hand-poured cup</p>
+        </div>
+        <div class="num rise">
+          <svg class="ico ico-grind" viewBox="0 0 64 64" aria-hidden="true">
+            <g class="crank"><path d="M32 12 V6 H48" /><circle cx="48" cy="6" r="3" /></g>
+            <path d="M18 12 h28 v6 h-28 Z" />
+            <path d="M20 18 h24 v26 q0 6 -6 6 h-12 q-6 0 -6 -6 Z" />
+            <path d="M26 50 l2 8 h8 l2 -8" />
+            <circle class="ground g1" cx="30" cy="60" r="1.5" />
+            <circle class="ground g2" cx="34" cy="60" r="1.5" />
+          </svg>
+          <p>Ground fresh for every cup</p>
+        </div>
+      </div>
+    </section>
 
-        <div class="gallery-grid">
-          <figure>
-            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=70" alt="Friends sharing coffee together" loading="lazy" width="700" height="500" />
-            <!-- Replace with images/gallery-1.jpg -->
-          </figure>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1481931098730-318b6f776db0?auto=format&fit=crop&w=700&q=70" alt="Cosy cafe seating corner" loading="lazy" width="700" height="500" />
-            <!-- Replace with images/gallery-2.jpg -->
-          </figure>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=700&q=70" alt="Coffee being poured" loading="lazy" width="700" height="500" />
-            <!-- Replace with images/gallery-3.jpg -->
-          </figure>
-          <figure>
-            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=700&q=70" alt="Cafe counter scene" loading="lazy" width="700" height="500" />
-            <!-- Replace with images/gallery-4.jpg -->
-          </figure>
+    <!-- STORY: words light up as you scroll -->
+    <section class="statement" id="story" data-scroll>
+      <div class="statement-pin">
+        <div class="wrap">
+          <p class="statement-text" data-words>Fort Kochi deserves a place where good coffee, good light and good company slow the day down. So every cup here is brewed by hand, and anyone who asks can learn how.</p>
+          <p class="statement-sign">Brewing bold stories in the heart of Fort Kochi.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY: horizontal strip driven by vertical scroll -->
+    <section class="gallery" id="gallery" data-scroll aria-label="Photos of coffee at Arasta">
+      <div class="gallery-pin">
+        <div class="gallery-track">
+          <h2 class="gallery-title">Inside the ritual.</h2>
+          <img src="images/gallery-1.webp" alt="Friends sharing coffee at a table" loading="lazy" width="1000" height="666" />
+          <img src="images/step-bloom.webp" alt="Wet coffee grounds blooming in a paper filter" loading="lazy" width="960" height="720" />
+          <img src="images/gallery-3.webp" alt="Coffee being poured" loading="lazy" width="1000" height="666" />
+          <img src="images/gallery-2.webp" alt="Freshly roasted coffee beans" loading="lazy" width="800" height="610" />
+          <img src="images/menu-coffee.webp" alt="A cup of coffee with latte art" loading="lazy" width="900" height="1350" />
+          <img src="images/gallery-4.webp" alt="A coffee counter" loading="lazy" width="800" height="533" />
         </div>
       </div>
     </section>
 
     <!-- VISIT -->
-    <section class="section visit" id="visit">
-      <div class="container visit-grid">
-        <div class="visit-details">
-          <p class="section-eyebrow">Visit Us</p>
-          <h3>Come find your table</h3>
+    <section class="visit" id="visit">
+      <div class="wrap visit-grid">
+        <figure class="visit-photo rise">
+          <img src="images/storefront.jpg" alt="The green door and white sign of Arasta Fortkochi" width="960" height="1280" loading="lazy" />
+        </figure>
+
+        <div class="visit-details rise">
+          <h2>Find us on Quiros Street.</h2>
           <dl>
-            <dt>Address</dt>
-            <dd>Quiros St, Fort Nagar, Fort Kochi, Kochi, Kerala 682001</dd>
-            <dt>Hours</dt>
-            <dd>Mon – Thu: 8:30 AM – 10:00 PM<br />Fri – Sun: 8:30 AM – 11:00 PM</dd>
-            <dt>Reach us</dt>
-            <dd>
-              <a href="mailto:hello@arasta.coffee" style="color: var(--color-cream); text-decoration: underline;">hello@arasta.coffee</a>
-              &middot;
-              <a href="https://www.instagram.com/arasta.fortkochi" style="color: var(--color-cream); text-decoration: underline;" target="_blank" rel="noopener">Instagram</a>
-            </dd>
+            <div><dt>Address</dt><dd>Quiros St, Fort Nagar, Fort Kochi, Kochi, Kerala 682001</dd></div>
+            <div><dt>Hours</dt><dd>Monday to Thursday, 8:30 am to 10 pm<br />Friday to Sunday, 8:30 am to 11 pm</dd></div>
+            <div><dt>Say hello</dt><dd><a href="mailto:hello@arasta.coffee">hello@arasta.coffee</a><br /><a href="https://www.instagram.com/arasta.fortkochi" target="_blank" rel="noopener">@arasta.fortkochi</a></dd></div>
           </dl>
-          <a href="#join" class="btn btn-primary">Join the List</a>
-        </div>
-        <div class="map-frame">
-          <iframe
-            src="https://www.google.com/maps?q=9.9655798,76.2417349&z=17&output=embed"
-            title="Map to Arasta Fortkochi"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+          <div class="visit-actions">
+            <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=9.9655798,76.2417349" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn-ghost" href="mailto:hello@arasta.coffee?subject=Brew%20session%20booking">Book a brew session</a>
+          </div>
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps?q=9.9655798,76.2417349&z=17&output=embed"
+              title="Map showing Arasta Fortkochi on Quiros Street"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- JOIN / LEAD CAPTURE -->
-    <section class="section signup" id="join">
-      <div class="container signup-inner">
-        <p class="section-eyebrow">Stay in the Loop</p>
-        <h2 class="section-title">Join the Arasta list</h2>
-        <p class="section-lead">First word on our opening, events and new menu drops — no spam, just coffee news.</p>
+    <!-- JOIN -->
+    <section class="join" id="join">
+      <div class="wrap join-inner rise">
+        <h2>Get on the list.</h2>
+        <p>New brew sessions, events and seasonal menus. One email when there's something worth telling you.</p>
 
         <form class="signup-form" id="signup-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
           <!-- Replace YOUR_FORMSPREE_ID with your real Formspree form ID (formspree.io) -->
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required autocomplete="name" />
-          </div>
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required autocomplete="email" />
-          </div>
-          <div class="form-field">
-            <label for="phone">Phone (optional)</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel" />
-          </div>
-
+          <label class="visually-hidden" for="name">Name</label>
+          <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name" />
+          <label class="visually-hidden" for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" />
           <input type="text" name="_gotcha" class="form-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
-
-          <button type="submit" class="btn btn-primary">Join the List</button>
-          <p class="form-status" id="form-status" role="status"></p>
+          <button type="submit" class="btn btn-primary">Join the list</button>
         </form>
+        <p class="form-note">We only use your details to send Arasta news. Unsubscribe any time.</p>
+        <p class="form-status" id="form-status" role="status"></p>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-brand">arasta.fortkochi</div>
-      <ul class="footer-links">
-        <li><a href="https://www.instagram.com/arasta.fortkochi" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></li>
-        <li><a href="#" aria-label="Facebook">Facebook</a></li>
-        <li><a href="mailto:hello@arasta.coffee">Email</a></li>
-      </ul>
-      <p class="footer-note">&copy; <span id="year"></span> Arasta Fortkochi, Fort Kochi, Kerala. All rights reserved.</p>
+  <footer class="footer">
+    <div class="wrap">
+      <p class="footer-mark" aria-hidden="true">arasta<span>.</span></p>
+      <div class="footer-row">
+        <ul class="footer-links">
+          <li><a href="https://www.instagram.com/arasta.fortkochi" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="mailto:hello@arasta.coffee">hello@arasta.coffee</a></li>
+          <li><a href="#visit">Quiros St, Fort Kochi</a></li>
+        </ul>
+        <p class="footer-note">&copy; <span id="year"></span> Arasta Fortkochi</p>
+      </div>
     </div>
   </footer>
 

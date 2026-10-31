@@ -7,10 +7,10 @@ GitHub Pages at [arasta.coffee](https://arasta.coffee).
 ## Structure
 
 ```
-index.html          Single-page site (hero, story, menu, gallery, visit, signup, footer)
+index.html          Single-page site (hero, languages marquee, experience grid, menu, numbers, story, gallery, visit, signup, footer)
 css/style.css        All styling, theme colours as CSS custom properties in :root
-js/main.js           Mobile nav toggle, footer year, signup form submit (Formspree)
-images/README.md     How to swap the placeholder stock photos for real photography
+js/main.js           Scroll progress, word reveal, count-up numbers, menu tabs, mobile nav, signup form (Formspree)
+images/             Local photos (CC0 / Unsplash licence); credits in images/README.md
 CNAME                Custom domain config for GitHub Pages (arasta.coffee)
 ```
 
@@ -30,11 +30,9 @@ Then visit `http://localhost:8000`.
 1. **Lead capture**: sign up free at [formspree.io](https://formspree.io),
    create a form, and replace `YOUR_FORMSPREE_ID` in the signup form's
    `action` attribute in `index.html` with your real form ID.
-2. **Photos**: the site currently hotlinks free Unsplash stock photos as
-   placeholders. See `images/README.md` for exactly which files to add and
-   where to swap the links once you have real photography.
-3. **Address**: update the placeholder address in the "Visit Us" section of
-   `index.html` with your exact street address.
+2. **Photos**: most photos are free stock (CC0 / Unsplash). Swap in real
+   Arasta photography when you have it; see `images/README.md`.
+3. **Menu**: confirm the items in the menu section match what Arasta serves.
 
 ## Deploy (GitHub Pages)
 
